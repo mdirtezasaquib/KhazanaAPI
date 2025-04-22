@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
       <div className="relative h-screen w-full bg-gradient-to-r from-teal-400 via-cyan-400 to-sky-500">
@@ -11,12 +13,12 @@ const Home = () => {
             explore the treasure of dummy APIs with beautiful UI!
           </p>
   
-          <a
-            href="/users"
+          <Link
+            to="/users"
             className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300"
           >
             🚀 Explore Users
-          </a>
+          </Link>
         </div>
       </div>
     );
